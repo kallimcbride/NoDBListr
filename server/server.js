@@ -7,7 +7,7 @@ const port = 4200
 
 app.use(express.json())
 
-
+app.get('/api/groceries', listCtrl.read)
 
 
 

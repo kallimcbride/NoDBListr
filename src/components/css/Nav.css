@@ -1,5 +1,5 @@
 .Navbar {
-    width: 100%;
+    width: 100vw;
     height: 15vh;
     background: lime
 
@@ -10,7 +10,8 @@
     float: left;
     padding-left: 50px;
     color: whitesmoke;
-    font-style: italic
+    font-style: italic;
+    align-items: baseline
 }
 
 .Slogan {
@@ -18,5 +19,7 @@
     float: right;
     color: whitesmoke;
     font-style: italic;
-    padding-right: 25px
+    padding-right: 25px;
+    padding-top: 9px;
+    align-items: baseline
 }

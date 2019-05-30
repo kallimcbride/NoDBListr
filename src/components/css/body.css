@@ -1,6 +1,14 @@
 .Body {
   background: url('https://images.pexels.com/photos/701970/pexels-photo-701970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    height: 200vh;
+    height: 100vh;
     background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-top: 15vh;
+  overflow-x: hidden;
+  z-index: -1;
+
 } 

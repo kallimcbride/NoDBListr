@@ -2,14 +2,18 @@ let id = 1
 let list = [
     {
         id: id++,
-        Quantity: 1,
         item: 'bread',
-        inCart: True
+        quantity: 1,
+        inCart: false
     },
     {
         id: id++,
-        Quantity: 2,
-        item: 'pickle jar',
-        inCart: True
+        item: 'pickles',
+        quantity: 2,
+        inCart: false
     }
 ]
+
+module.exports = {
+    read: (req, res) => res.send(list)
+}
