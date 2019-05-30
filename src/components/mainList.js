@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios'
 import './mainList.css'
 import Grocery from './grocery';
+import AddGrocery from './addGrocery';
 
 export default class MainList extends Component {
     constructor(){
@@ -33,6 +34,14 @@ componentDidMount() {
         })
     }).catch(err => console.log('We aint found ish', err))
 }
+
+createGrocery = addGrocery => {
+    axios.post('/api/groceries', addGrocery).then(res => {
+        this.setState({
+            groceries: res.data
+        })
+    }).catch(err => console.log(err))
+}
    
     render () {
         return (
@@ -44,7 +53,9 @@ componentDidMount() {
                         grocery={grocery}></Grocery>
                 )
             })}
-            </div>  
+            <div> <AddGrocery createGrocery={this.createGrocery}/> </div>
+            </div>
+            
         )
     }
 }

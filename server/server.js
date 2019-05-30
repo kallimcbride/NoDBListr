@@ -8,8 +8,8 @@ const port = 4200
 app.use(express.json())
 
 app.get('/api/groceries', listCtrl.read)
-
-
+app.post('/api/groceries', listCtrl.create)
+app.put('/api/animals/:id', listCtrl.update)
 
 
 

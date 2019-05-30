@@ -8,11 +8,10 @@ render() {
   return (
     <div className="App">
       <header> <Nav /> </header>
-      
-        <Body />
+      <Body />
       <div>
         <MainList/>
-         </div>
+      </div>
     </div>
   );
  }
