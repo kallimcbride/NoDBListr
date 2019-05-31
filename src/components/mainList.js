@@ -59,7 +59,7 @@ deleteGrocery = id => {
     render () {
         return (
         <div className="mainList">
-            <header class="listName">CALEB'S LISTR</header>
+            <header class="listName" style={{border: '5px solid black'}}>CALEB'S LISTR</header>
             {this.state.groceries.map(grocery => {
                 return (
                     <Grocery

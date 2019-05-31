@@ -28,16 +28,18 @@ export default class Grocery extends Component {
                 updateGrocery={this.props.updateGrocery} />
                 :
                 <ul>
-                <li>Item: {grocery.item}</li>
-                Quantity: {grocery.quantity}, 
-                In Cart: {grocery.inCart} </ul>
+                <li style={{borderBottom: '3px solid black'}}>Item: {grocery.item}
+                    </li>
+                     <ul>Quantity: {grocery.quantity}</ul> 
+                    <ul>In Cart: {grocery.inCart}</ul>
+                     </ul>
                 }
                 {this.state.inCart ?
-                <button onClick={this.toggleEdit}>Cancel</button>
+                <button class="button1" onClick={this.toggleEdit}>Cancel</button>
                 :
-                <button onClick={this.toggleEdit}>Edit</button>
+                <button class="button2" onClick={this.toggleEdit}>Edit</button>
                 }
-                <button onClick={this.props.deleteGrocery}>Delete</button>
+                <button class="button3" onClick={this.props.deleteGrocery}>Delete</button>
             </div>            
         )
     }

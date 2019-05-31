@@ -1,0 +1,39 @@
+.button4 {
+    backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: #ebc63c;
+  border-radius: 0px;
+  border: 0px solid #7d1414;
+  border-width: 0px 0px 4px 0px;
+  padding: 10px 20px 10px 20px;
+    color: black;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal
+  }
+  .button4 > div {
+    color: #999;
+  font-size: 10px;
+  font-family: Helvetica Neue;
+  font-weight: initial;
+  font-style: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px
+  }
+  .button4 > i {
+    font-size: 1em;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  border-width: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  position: static
+  }
+  .button4 > .ld {
+    font-size: initial
+  }
+

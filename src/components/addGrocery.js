@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './addGrocery.css'
 
 export default class AddGrocery extends Component {
     constructor(props){
@@ -28,7 +29,7 @@ export default class AddGrocery extends Component {
    render() {
        console.log(this.props)
        return (
-           <div style={{border: '3px dotted black', margin: 15}}>
+           <div style={{border: '3px dotted black', margin: 15, padding: 5}}>
                <input
                type="text"
                name="item"
@@ -49,7 +50,7 @@ export default class AddGrocery extends Component {
                placeholder=""
                onChange={this.handleAdd}
                 />
-               <button onClick={this.handleClick}>Update Cart</button>
+               <button class="button4" onClick={this.handleClick}>Update Cart</button>
            </div>
        )
    }

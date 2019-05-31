@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './editList.css'
 
 export default class EditList extends Component {
     constructor(props){
@@ -40,7 +41,7 @@ export default class EditList extends Component {
           value={this.state.quantity}
           placeholder="quantity"
           onChange={this.handleEdit}/>
-        <button onClick={this.handleClick}>Update Grocery</button>
+        <button class="button4" onClick={this.handleClick}>Update Grocery</button>
         </div>
         )
     }
