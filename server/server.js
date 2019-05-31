@@ -9,8 +9,8 @@ app.use(express.json())
 
 app.get('/api/groceries', listCtrl.read)
 app.post('/api/groceries', listCtrl.create)
-app.put('/api/animals/:id', listCtrl.update)
-
+app.put('/api/groceries/:id', listCtrl.update)
+app.delete('/api/groceries/:id', listCtrl.delete)
 
 
 app.listen(port, () => {

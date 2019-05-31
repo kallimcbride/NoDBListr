@@ -14,9 +14,7 @@ export default class MainList extends Component {
 
     }
 
-
-
-    //    crossOff = () => {
+//    crossOff = () => {
 //        return{
 //            background: 'white',
 //            padding: '15px',
@@ -42,18 +40,38 @@ createGrocery = addGrocery => {
         })
     }).catch(err => console.log(err))
 }
+
+updateGrocery = grocery => {
+    console.log(grocery)
+    axios.put(`/api/groceries/${grocery.id}`, grocery)
+    .then(res => this.setState({ groceries: res.data}))
+    .catch(err => console.log(err))
+}
+
+deleteGrocery = id => {
+    axios.delete(`/api/groceries/${id}`)
+    .then(res => this.setState({groceries: res.data}))
+    .catch(err=> console.log(err))
+}
+
+
    
     render () {
         return (
         <div className="mainList">
+            <header class="listName">CALEB'S LISTR</header>
             {this.state.groceries.map(grocery => {
                 return (
                     <Grocery
                         key={grocery.id}
-                        grocery={grocery}></Grocery>
+                        grocery={grocery}
+                        updateGrocery={this.updateGrocery}
+                        deleteGrocery={this.deleteGrocery}></Grocery>
                 )
             })}
             <div> <AddGrocery createGrocery={this.createGrocery}/> </div>
+            
+            
             </div>
             
         )

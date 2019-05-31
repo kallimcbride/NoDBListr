@@ -49,7 +49,7 @@ export default class AddGrocery extends Component {
                placeholder=""
                onChange={this.handleAdd}
                 />
-               <button onClick={this.handleClick}>Update Grocery</button>
+               <button onClick={this.handleClick}>Update Cart</button>
            </div>
        )
    }
