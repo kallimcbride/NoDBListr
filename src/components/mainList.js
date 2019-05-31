@@ -66,7 +66,7 @@ deleteGrocery = id => {
                         key={grocery.id}
                         grocery={grocery}
                         updateGrocery={this.updateGrocery}
-                        deleteGrocery={this.deleteGrocery}></Grocery>
+                        deleteGrocery={() => this.deleteGrocery(grocery.id)}></Grocery>
                 )
             })}
             <div> <AddGrocery createGrocery={this.createGrocery}/> </div>
