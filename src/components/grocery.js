@@ -31,7 +31,7 @@ export default class Grocery extends Component {
                 <li style={{borderBottom: '3px solid black'}}>Item: {grocery.item}
                     </li>
                      <ul>Quantity: {grocery.quantity}</ul> 
-                    <ul>In Cart: {grocery.inCart}</ul>
+                    <ul>In Cart: {grocery.inCart} yes</ul>
                      </ul>
                 }
                 {this.state.inCart ?

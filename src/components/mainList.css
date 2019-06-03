@@ -1,23 +1,22 @@
 .mainList {
-    height: 600px;
     width: 575px;
-    overflow-y: scroll;
-    background: gold;
-    display: flex;
+    background: #feec13;
     justify-content: center;
     align-content: center;
-    margin-left: 31%;
-    margin-top: 30px;
+    margin: 150px auto;
     padding-top: 25px;
     flex-direction: column;
-    position: absolute;
+    border: 3px solid #3aaa35
 }
 
 .listName{
+    border-bottom: 5px double black;
     display: flex;
     justify-content: center;
     align-content: center;
-    font-family: cursive;
+    font-family: courgette, sans-serif;
     font-size: 2em;  
     font-style: italic;
+    padding-top: 5px;
+    margin-bottom: 15px;
 }

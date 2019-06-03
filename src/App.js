@@ -10,7 +10,7 @@ render() {
       <header> <Nav /> </header>
       <Body />
       <div>
-        <MainList/>
+        
       </div>
     </div>
   );

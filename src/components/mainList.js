@@ -14,16 +14,6 @@ export default class MainList extends Component {
 
     }
 
-//    crossOff = () => {
-//        return{
-//            background: 'white',
-//            padding: '15px',
-//            borderBottom: '3px solid black dotted', 
-//            textDecoration: this.props.items.inCart ? 
-//            'line-through' : 'none'
-//        }
-//    }
-
 componentDidMount() {
     axios.get('/api/groceries').then((res) => {
        console.log(res.data)
@@ -59,7 +49,7 @@ deleteGrocery = id => {
     render () {
         return (
         <div className="mainList">
-            <header class="listName" style={{border: '5px solid black'}}>CALEB'S LISTR</header>
+            <header class="listName">Caleb's Listr</header>
             {this.state.groceries.map(grocery => {
                 return (
                     <Grocery

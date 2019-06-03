@@ -43,14 +43,8 @@ export default class AddGrocery extends Component {
                placeholder="quantity"
                onChange={this.handleAdd}
                 />
-                <input
-               type="text"
-               name="inCart"
-               value={this.state.item} 
-               placeholder=""
-               onChange={this.handleAdd}
-                />
-               <button class="button4" onClick={this.handleClick}>Update Cart</button>
+                
+               <button class="button4" onClick={this.handleClick}>Add to Cart</button>
            </div>
        )
    }
