@@ -59,7 +59,7 @@ deleteGrocery = id => {
                         deleteGrocery={() => this.deleteGrocery(grocery.id)}></Grocery>
                 )
             })}
-            <div> <AddGrocery createGrocery={this.createGrocery}/> </div>
+            <section> <AddGrocery createGrocery={this.createGrocery}/> </section>
             
             
             </div>

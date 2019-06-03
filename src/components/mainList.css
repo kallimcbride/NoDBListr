@@ -1,8 +1,8 @@
 .mainList {
     width: 575px;
     background: #feec13;
+    display: flex;
     justify-content: center;
-    align-content: center;
     margin: 150px auto;
     padding-top: 25px;
     flex-direction: column;
@@ -13,7 +13,6 @@
     border-bottom: 5px double black;
     display: flex;
     justify-content: center;
-    align-content: center;
     font-family: courgette, sans-serif;
     font-size: 2em;  
     font-style: italic;
