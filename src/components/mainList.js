@@ -67,9 +67,3 @@ deleteGrocery = id => {
         )
     }
 }
-
-
- // <p>
-            //     <input type="checkbox"/> WHATS GOOD BOI?!
-            //     {/* {this.props.items.title} */}
-            // </p>

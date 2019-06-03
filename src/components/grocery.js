@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './grocery.css'
 import EditList from './editList'
+import Button from './stateless/button'
 
 export default class Grocery extends Component {
     constructor(props) {
@@ -21,25 +22,29 @@ export default class Grocery extends Component {
         let {grocery} = this.props
         console.log(this.props)
         return(
-            <div class="items">
+            <div className="items">
                 {this.state.inCart ?
                 <EditList
+                toggleEdit={this.toggleEdit}
                 item={grocery}
                 updateGrocery={this.props.updateGrocery} />
                 :
                 <ul>
                 <li style={{borderBottom: '3px solid black'}}>Item: {grocery.item}
                     </li>
-                     <ul>Quantity: {grocery.quantity}</ul> 
+                    <img src={grocery.imageUrl} alt="" width="125" height="100"/> 
+                     <ul>Quantity: {grocery.quantity}</ul>
                     <ul>In Cart: {grocery.inCart} yes</ul>
+                    
                      </ul>
-                }
+                } <div>
                 {this.state.inCart ?
-                <button class="button1" onClick={this.toggleEdit}>Cancel</button>
+                <Button name="Cancel" func={this.toggleEdit}/> 
                 :
-                <button class="button2" onClick={this.toggleEdit}>Edit</button>
+                <Button name="Edit" func={this.toggleEdit}/> 
                 }
                 <button class="button3" onClick={this.props.deleteGrocery}>Delete</button>
+                </div>
             </div>            
         )
     }

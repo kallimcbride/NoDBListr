@@ -1,7 +1,7 @@
 .items {
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
     font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: px
     

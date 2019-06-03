@@ -10,7 +10,8 @@ export default class AddGrocery extends Component {
         this.state = {
             item: '',
             quantity: 0,
-            inCart: false
+            inCart: false,
+            imageUrl:''
         }
     }
 
@@ -29,7 +30,7 @@ export default class AddGrocery extends Component {
    render() {
        console.log(this.props)
        return (
-           <div style={{border: '3px dotted black', margin: 15, padding: 5}}>
+           <div style={{border: '5px double black', margin: 15, padding: 5}}>
                <input
                type="text"
                name="item"
@@ -43,6 +44,12 @@ export default class AddGrocery extends Component {
                placeholder="quantity"
                onChange={this.handleAdd}
                 />
+                <input
+                type="text"
+                name="imageUrl"
+                placeholder="image"
+                onChange={this.handleAdd}
+                value={this.state.imageUrl}/>
                 
                <button class="button4" onClick={this.handleClick}>Add to Cart</button>
            </div>

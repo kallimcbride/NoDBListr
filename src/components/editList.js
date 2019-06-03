@@ -24,6 +24,7 @@ export default class EditList extends Component {
     handleClick = () => {
         let updatedCart = {...this.props.groceries, ...this.state}
         this.props.updateGrocery(updatedCart)
+        this.props.toggleEdit()
     }
 
     render(){
@@ -41,6 +42,12 @@ export default class EditList extends Component {
           value={this.state.quantity}
           placeholder="quantity"
           onChange={this.handleEdit}/>
+          <input
+                type="text"
+                name="imageUrl"
+                placeholder="image"
+                onChange={this.handleEdit}
+                value={this.state.imageUrl}/>   
         <button class="button4" onClick={this.handleClick}>Update Grocery</button>
         </div>
         )

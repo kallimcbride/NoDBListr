@@ -4,7 +4,7 @@ import MainList from '../mainList'
 
 export default function Body(){
     return (
-    <div class="Body"><MainList/></div>
+    <body class="Body"><MainList/></body>
     )
 
 } 
